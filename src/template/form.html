@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test task</title>
+</head>
+<body>
+  <form action="/store" method="POST">
+      <div>
+          <input type="hidden" name="csrf" value="<?php echo $csrf; ?>">
+          <textarea name="data"><?php echo $data; ?></textarea>
+      </div>
+      <div>
+          <input type="submit">
+      </div>
+  </form>
+</body>
+</html>
